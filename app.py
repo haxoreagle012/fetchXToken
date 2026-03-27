@@ -43,7 +43,7 @@ def bypass_recaptcha():
             return jsonify({'status': 'Recaptcha not vulnerable', 'details': r2.text}), 200
         else:
             result = {
-                'status': 'Recaptcha Bypassed',
+                'status': 'Recaptcha Bypassed (DeViL)',
                 'token': token2,
             }
             return jsonify(result), 200
